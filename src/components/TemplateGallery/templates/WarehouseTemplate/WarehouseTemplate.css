@@ -1,0 +1,306 @@
+/* Warehouse Template CSS */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+:root {
+  --warehouse-dark-gray: #333333;
+  --warehouse-medium-gray: #666666;
+  --warehouse-light-gray: #f5f5f5;
+  --warehouse-orange: #FF9800;
+  --warehouse-dark-orange: #F57C00;
+  --warehouse-light-orange: #FFE0B2;
+}
+
+.warehouse-template {
+  font-family: 'PT Sans', 'Roboto Condensed', sans-serif;
+  background-color: white;
+  color: var(--warehouse-dark-gray);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+.warehouse-header {
+  background-color: var(--warehouse-dark-gray);
+  color: white;
+  padding: 25px;
+  margin: -30px -30px 25px -30px;
+  position: relative;
+}
+
+.warehouse-header::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: var(--warehouse-orange);
+}
+
+.warehouse-name {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 0 5px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.warehouse-title {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+  color: var(--warehouse-light-orange);
+}
+
+/* Contact Styles */
+.warehouse-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 25px;
+  background-color: var(--warehouse-light-gray);
+  padding: 15px;
+}
+
+.warehouse-contact-item {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.warehouse-contact-item i {
+  color: var(--warehouse-orange);
+  margin-right: 8px;
+  font-size: 16px;
+  width: 20px;
+  text-align: center;
+}
+
+/* Main Content Styles */
+.warehouse-main {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.warehouse-section {
+  margin-bottom: 10px;
+}
+
+.warehouse-section-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--warehouse-dark-gray);
+  margin: 0 0 15px 0;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--warehouse-orange);
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.warehouse-section-title i {
+  color: var(--warehouse-orange);
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.warehouse-summary {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+/* Experience Styles */
+.warehouse-experience-item {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--warehouse-light-gray);
+}
+
+.warehouse-experience-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.warehouse-experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 5px;
+}
+
+.warehouse-experience-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--warehouse-dark-gray);
+  margin: 0;
+}
+
+.warehouse-experience-date {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--warehouse-orange);
+}
+
+.warehouse-experience-company {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--warehouse-medium-gray);
+  margin-bottom: 10px;
+}
+
+.warehouse-experience-responsibilities {
+  margin: 10px 0 0 0;
+  padding-left: 20px;
+}
+
+.warehouse-experience-responsibilities li {
+  margin-bottom: 5px;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+/* Certifications Styles */
+.warehouse-certifications-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.warehouse-certification-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  background-color: var(--warehouse-light-gray);
+  border-left: 4px solid var(--warehouse-orange);
+}
+
+.warehouse-certification-name {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.warehouse-certification-date {
+  color: var(--warehouse-medium-gray);
+}
+
+/* Forklift License Styles */
+.warehouse-license-info {
+  background-color: var(--warehouse-light-gray);
+  padding: 15px;
+  border-left: 4px solid var(--warehouse-orange);
+}
+
+.warehouse-license-type {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.warehouse-license-dates {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 15px;
+}
+
+/* Education Styles */
+.warehouse-education-item {
+  margin-bottom: 15px;
+}
+
+.warehouse-education-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.warehouse-education-degree {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.warehouse-education-date {
+  font-size: 15px;
+  color: var(--warehouse-orange);
+}
+
+.warehouse-education-school {
+  font-size: 15px;
+  color: var(--warehouse-medium-gray);
+}
+
+/* Placeholder Styles */
+.warehouse-placeholder {
+  color: #999;
+  font-style: italic;
+  font-size: 15px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .warehouse-header {
+    padding: 20px;
+  }
+  
+  .warehouse-name {
+    font-size: 28px;
+  }
+  
+  .warehouse-contact {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .warehouse-experience-header,
+  .warehouse-education-header {
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .warehouse-license-dates {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .warehouse-template {
+    box-shadow: none;
+    padding: 0;
+  }
+  
+  .warehouse-header {
+    background-color: #333;
+    color: black;
+    padding: 15px;
+    margin: 0 0 20px 0;
+  }
+  
+  .warehouse-header::after {
+    display: none;
+  }
+  
+  .warehouse-title {
+    color: #666;
+  }
+  
+  .warehouse-section-title i,
+  .warehouse-contact-item i,
+  .warehouse-experience-date {
+    color: #666;
+  }
+  
+  .warehouse-certification-item,
+  .warehouse-license-info {
+    background-color: white;
+    border-color: #ccc;
+  }
+} 

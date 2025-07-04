@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary: #00ADB5;
+  --primary-light: rgba(0, 173, 181, 0.1);
+  --primary-dark: #008E94;
+  --text-dark: #333;
+  --text-gray: #777;
+  --light-gray: #eee;
+  --white: #fff;
+  --card-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.startup-hustler-template {
+  font-family: 'Inter', sans-serif;
+  color: var(--text-dark);
+  background-color: #f7f7f7;
+  line-height: 1.6;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100%;
+}
+
+/* Header */
+.startup-hustler-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.startup-hustler-name-section {
+  flex: 1;
+}
+
+.startup-hustler-name {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--text-dark);
+}
+
+.startup-hustler-title {
+  font-size: 1.25rem;
+  color: var(--primary);
+  margin-top: 0.5rem;
+  font-weight: 400;
+}
+
+.startup-hustler-contact-section {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.startup-hustler-contact-button {
+  background-color: var(--white);
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  border-radius: 30px;
+  padding: 0.5rem 1.25rem;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.startup-hustler-contact-button:hover {
+  background-color: var(--primary);
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
+/* Grid Layout */
+.startup-hustler-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Cards */
+.startup-hustler-card {
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: var(--card-shadow);
+  overflow: hidden;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.startup-hustler-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
+}
+
+.startup-hustler-card-title {
+  background-color: var(--primary);
+  color: var(--white);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 1rem;
+  position: relative;
+}
+
+.startup-hustler-card-content {
+  padding: 1.25rem;
+}
+
+/* Overview Card */
+.overview-card .startup-hustler-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.startup-hustler-photo {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--primary-light);
+}
+
+.startup-hustler-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.startup-hustler-summary {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text-gray);
+}
+
+/* Skills Card */
+.startup-hustler-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.startup-hustler-skill {
+  position: relative;
+  padding-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.startup-hustler-skill-level {
+  height: 5px;
+  background-color: var(--primary);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 10px;
+}
+
+.startup-hustler-skill::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background-color: var(--light-gray);
+  border-radius: 10px;
+}
+
+/* Experience Card */
+.startup-hustler-job {
+  margin-bottom: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.startup-hustler-job:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.startup-hustler-job-header {
+  margin-bottom: 0.8rem;
+}
+
+.startup-hustler-job-title {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.startup-hustler-job-company {
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.startup-hustler-job-date {
+  font-size: 0.85rem;
+  color: var(--text-gray);
+}
+
+.startup-hustler-job-details {
+  margin: 0;
+  padding-left: 1.25rem;
+  font-size: 0.95rem;
+  color: var(--text-gray);
+}
+
+.startup-hustler-job-details li {
+  margin-bottom: 0.5rem;
+}
+
+/* Projects Card */
+.startup-hustler-project {
+  margin-bottom: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.startup-hustler-project:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.startup-hustler-project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.startup-hustler-project-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.startup-hustler-project-link {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.startup-hustler-project-link:hover {
+  background-color: var(--primary-dark);
+}
+
+.startup-hustler-project-desc {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+  color: var(--text-gray);
+}
+
+.startup-hustler-project-tech {
+  font-size: 0.85rem;
+  color: var(--primary);
+  font-weight: 500;
+}
+
+/* Education Card */
+.startup-hustler-edu-item {
+  margin-bottom: 1rem;
+}
+
+.startup-hustler-edu-item:last-child {
+  margin-bottom: 0;
+}
+
+.startup-hustler-edu-degree {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0 0 0.25rem;
+}
+
+.startup-hustler-edu-school {
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+}
+
+.startup-hustler-edu-date {
+  font-size: 0.85rem;
+  color: var(--text-gray);
+}
+
+/* References Card */
+.startup-hustler-reference {
+  margin-bottom: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.startup-hustler-reference:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.startup-hustler-reference-name {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.startup-hustler-reference-title {
+  font-size: 0.95rem;
+  color: var(--primary);
+  margin-bottom: 0.25rem;
+}
+
+.startup-hustler-reference-contact {
+  font-size: 0.9rem;
+  color: var(--text-gray);
+  margin-bottom: 0.5rem;
+}
+
+.startup-hustler-reference-quote {
+  margin: 1rem 0 0;
+  padding-left: 1rem;
+  border-left: 3px solid var(--primary-light);
+  font-style: italic;
+  color: var(--text-gray);
+  font-size: 0.95rem;
+}
+
+/* Template preview modal adjustments */
+.template-preview-modal .startup-hustler-template {
+  padding: 1.5rem;
+  font-size: 0.9em;
+}
+
+.template-preview-modal .startup-hustler-header {
+  margin-bottom: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+
+.template-preview-modal .startup-hustler-name {
+  font-size: 2rem;
+}
+
+.template-preview-modal .startup-hustler-title {
+  font-size: 1.1rem;
+}
+
+.template-preview-modal .startup-hustler-grid {
+  gap: 1.2rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.template-preview-modal .startup-hustler-card-title {
+  font-size: 1.1rem;
+  padding: 0.8rem;
+}
+
+.template-preview-modal .startup-hustler-card-content {
+  padding: 1rem;
+}
+
+.template-preview-modal .startup-hustler-photo {
+  width: 100px;
+  height: 100px;
+}
+
+.template-preview-modal .startup-hustler-job {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+.template-preview-modal .startup-hustler-project {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+.template-preview-modal .startup-hustler-job-title,
+.template-preview-modal .startup-hustler-project-name,
+.template-preview-modal .startup-hustler-edu-degree {
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .startup-hustler-template {
+    padding: 1rem;
+  }
+  
+  .startup-hustler-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .startup-hustler-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .startup-hustler-contact-section {
+    margin-top: 1.5rem;
+  }
+} 

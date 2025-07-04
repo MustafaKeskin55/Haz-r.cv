@@ -1,0 +1,246 @@
+.legal-template {
+  padding: 25px;
+  color: #333;
+  background-color: white;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.legal-background-icon {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 512'%3E%3Cpath d='M384 32H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H398.4c-5.2 25.8-22.9 47.1-46.4 57.3V448H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H320 128c-17.7 0-32-14.3-32-32s14.3-32 32-32H288V153.3c-23.5-10.3-41.2-31.6-46.4-57.3H128c-17.7 0-32-14.3-32-32s14.3-32 32-32H256c17.7 0 32 14.3 32 32v32c0 17.7 14.3 32 32 32s32-14.3 32-32V64c0-17.7 14.3-32 32-32z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.legal-header {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #0B3D91;
+  margin-bottom: 15px;
+  z-index: 1;
+  position: relative;
+}
+
+.legal-name-title h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: 0.5px;
+  color: #0B3D91;
+}
+
+.legal-title {
+  font-size: 1rem;
+  color: #333;
+  font-weight: 400;
+}
+
+.legal-bar-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 15px;
+  font-size: 0.8rem;
+  color: #444;
+  border: 1px solid #e1e1e1;
+  padding: 10px;
+  background-color: #f9f9f9;
+  z-index: 1;
+  position: relative;
+}
+
+.legal-bar-item {
+  display: flex;
+  gap: 5px;
+}
+
+.legal-bar-label {
+  font-weight: 600;
+}
+
+.legal-contact {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+  z-index: 1;
+  position: relative;
+}
+
+.legal-contact-item {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  color: #333;
+}
+
+.legal-contact-item i {
+  margin-right: 5px;
+  color: #0B3D91;
+}
+
+.legal-main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 1;
+  position: relative;
+  text-align: justify;
+}
+
+.legal-section {
+  margin-bottom: 15px;
+}
+
+.legal-section-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0B3D91;
+  margin: 0 0 10px 0;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ddd;
+  text-transform: uppercase;
+}
+
+.legal-summary-text {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.legal-item {
+  margin-bottom: 15px;
+}
+
+.legal-item-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.legal-item-title {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.legal-item-subtitle {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.legal-item-date {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.legal-item-details {
+  margin: 8px 0 0 0;
+  padding-left: 20px;
+  font-size: 0.8rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+.legal-item-details li {
+  margin-bottom: 5px;
+}
+
+.legal-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.legal-skill-item {
+  background-color: #f0f0f0;
+  padding: 5px 10px;
+  font-size: 0.75rem;
+  border-radius: 3px;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.legal-languages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.legal-language-item {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  gap: 5px;
+}
+
+.legal-language-name {
+  color: #333;
+  font-weight: 600;
+}
+
+.legal-language-level {
+  color: #666;
+  font-style: italic;
+}
+
+/* Print optimizations */
+@media print {
+  .legal-template {
+    box-shadow: none;
+    padding: 15px;
+  }
+  
+  .legal-background-icon {
+    opacity: 0.02;
+  }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .legal-template {
+    padding: 15px;
+  }
+  
+  .legal-header {
+    margin-bottom: 10px;
+  }
+  
+  .legal-name-title h1 {
+    font-size: 1.5rem;
+  }
+  
+  .legal-contact {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .legal-bar-info {
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .legal-section-title {
+    font-size: 1rem;
+  }
+  
+  .legal-item-header {
+    flex-direction: column;
+  }
+} 

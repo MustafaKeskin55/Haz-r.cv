@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+.minimal-pure-template {
+  font-family: 'Inter', sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  color: #333;
+  background-color: #fff;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.minimal-pure-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.minimal-pure-section {
+  margin-bottom: 1rem;
+  flex-shrink: 0;
+}
+
+/* Empty space to push sections apart */
+.minimal-pure-content::after {
+  content: '';
+  flex: 1 1 auto;
+  min-height: 0.5rem;
+}
+
+/* Template preview modal adjustments */
+.template-preview-modal .minimal-pure-template {
+  max-width: 100%;
+  padding: 1.5rem;
+  font-size: 0.9em;
+}
+
+.template-preview-modal .minimal-pure-content {
+  justify-content: flex-start;
+}
+
+.template-preview-modal .minimal-pure-content::after {
+  display: none;
+}
+
+.template-preview-modal .minimal-pure-section {
+  margin-bottom: 0.8rem;
+}
+
+.template-preview-modal .minimal-pure-name {
+  font-size: 1.8rem;
+}
+
+.template-preview-modal .minimal-pure-title {
+  font-size: 1rem;
+  margin: 0.3rem 0 0.8rem;
+}
+
+.template-preview-modal .minimal-pure-contact {
+  gap: 1rem;
+}
+
+.template-preview-modal .minimal-pure-section-title {
+  margin: 0 0 0.7rem;
+}
+
+.template-preview-modal .minimal-pure-section-title::after {
+  bottom: -0.3rem;
+}
+
+.template-preview-modal .minimal-pure-item {
+  margin-bottom: 0.8rem;
+}
+
+.template-preview-modal .minimal-pure-item-title {
+  font-size: 1rem;
+}
+
+.template-preview-modal .minimal-pure-item-subtitle {
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+}
+
+.template-preview-modal .minimal-pure-details {
+  margin: 0.5rem 0 0;
+}
+
+/* Header */
+.minimal-pure-header {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
+}
+
+.minimal-pure-name {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+.minimal-pure-title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #333;
+  margin: 0.5rem 0 1rem;
+}
+
+.minimal-pure-contact {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.minimal-pure-contact span {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Sections */
+.minimal-pure-section-title {
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 1rem;
+  color: #000;
+  position: relative;
+}
+
+.minimal-pure-section-title::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #eee;
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+}
+
+/* Summary */
+.minimal-pure-summary {
+  margin: 0;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Items (experience, education) */
+.minimal-pure-item {
+  margin-bottom: 1.5rem;
+}
+
+.minimal-pure-item:last-child {
+  margin-bottom: 0;
+}
+
+.minimal-pure-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.25rem;
+}
+
+.minimal-pure-item-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.minimal-pure-item-date {
+  font-size: 0.9rem;
+  color: #555;
+  font-weight: 400;
+}
+
+.minimal-pure-item-subtitle {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+/* Details list */
+.minimal-pure-details {
+  margin: 0.75rem 0 0;
+  padding-left: 1.25rem;
+  color: #333;
+}
+
+.minimal-pure-details li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.minimal-pure-details li:last-child {
+  margin-bottom: 0;
+}
+
+/* Skills */
+.minimal-pure-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.minimal-pure-skill {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.minimal-pure-skill:after {
+  content: '•';
+  display: inline-block;
+  margin-left: 0.75rem;
+  color: #999;
+}
+
+.minimal-pure-skill:last-child:after {
+  content: '';
+  margin: 0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .minimal-pure-template {
+    padding: 1rem;
+  }
+  
+  .minimal-pure-contact {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  .minimal-pure-item-header {
+    flex-direction: column;
+  }
+  
+  .minimal-pure-item-date {
+    margin-top: 0.25rem;
+  }
+}
+
+/* Print-friendly */
+@media print {
+  .minimal-pure-template {
+    padding: 0;
+    max-width: 100%;
+  }
+  
+  .minimal-pure-section {
+    page-break-inside: avoid;
+  }
+} 

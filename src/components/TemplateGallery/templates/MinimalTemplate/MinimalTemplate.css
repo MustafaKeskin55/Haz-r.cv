@@ -1,0 +1,234 @@
+.minimal-template {
+  padding: 20px;
+  color: #333;
+  background-color: white;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  position: relative;
+  overflow: hidden;
+  font-size: 0.7rem;
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.minimal-header {
+  text-align: center;
+  margin-bottom: 15px;
+  flex-shrink: 0;
+}
+
+.minimal-name-title h1 {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin: 0;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+.minimal-title {
+  font-size: 1rem;
+  color: #777;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.minimal-contact {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+  flex-shrink: 0;
+}
+
+.minimal-contact-item {
+  display: flex;
+  align-items: center;
+  font-size: 0.7rem;
+  color: #555;
+}
+
+.minimal-contact-item i {
+  margin-right: 5px;
+  color: #888;
+}
+
+.minimal-main-content {
+  display: flex;
+  gap: 20px;
+  flex: 1;
+}
+
+.minimal-left-column {
+  flex: 3;
+  padding-right: 20px;
+  border-right: 1px solid #eee;
+}
+
+.minimal-right-column {
+  flex: 2;
+}
+
+.minimal-section {
+  margin-bottom: 15px;
+}
+
+.minimal-section-title {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.minimal-section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: #ddd;
+}
+
+.minimal-profile-text {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+.minimal-item {
+  margin-bottom: 12px;
+}
+
+.minimal-item-title {
+  font-weight: 500;
+  font-size: 0.85rem;
+  color: #000;
+}
+
+.minimal-item-subtitle {
+  font-size: 0.75rem;
+  color: #777;
+}
+
+.minimal-item-date {
+  font-size: 0.7rem;
+  color: #999;
+  margin-bottom: 5px;
+}
+
+.minimal-item-details {
+  margin: 5px 0 0 0;
+  padding-left: 15px;
+  font-size: 0.7rem;
+  color: #555;
+}
+
+.minimal-item-details li {
+  margin-bottom: 3px;
+}
+
+.minimal-skills-section {
+  margin-top: 15px;
+}
+
+.minimal-skill-bar-container {
+  margin-bottom: 8px;
+}
+
+.minimal-skill-name {
+  font-size: 0.75rem;
+  margin-bottom: 3px;
+  color: #555;
+}
+
+.minimal-skill-bar {
+  height: 5px;
+  background-color: #eee;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.minimal-skill-level {
+  height: 100%;
+  background-color: #888;
+  border-radius: 2px;
+}
+
+.minimal-languages-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+
+.minimal-language-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+}
+
+.minimal-language-name {
+  color: #555;
+}
+
+.minimal-language-level {
+  color: #999;
+}
+
+/* Template preview modal adjustments */
+.template-preview-modal .minimal-template {
+  max-width: 100%;
+  padding: 15px;
+  font-size: 0.85em;
+}
+
+.template-preview-modal .minimal-header {
+  margin-bottom: 12px;
+}
+
+.template-preview-modal .minimal-name-title h1 {
+  font-size: 1.6rem;
+}
+
+.template-preview-modal .minimal-title {
+  font-size: 0.9rem;
+}
+
+.template-preview-modal .minimal-contact {
+  gap: 12px;
+  margin-bottom: 15px;
+  padding-bottom: 12px;
+}
+
+.template-preview-modal .minimal-main-content {
+  gap: 15px;
+}
+
+.template-preview-modal .minimal-section {
+  margin-bottom: 12px;
+}
+
+.template-preview-modal .minimal-section-title {
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+.template-preview-modal .minimal-item {
+  margin-bottom: 10px;
+}
+
+.template-preview-modal .minimal-left-column {
+  padding-right: 15px;
+}
+
+.template-preview-modal .minimal-skills-section {
+  margin-top: 12px;
+} 

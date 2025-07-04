@@ -1,0 +1,473 @@
+/* Videographer Template CSS */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --videographer-bg-color: #121212;
+  --videographer-dark-gray: #1e1e1e;
+  --videographer-light-gray: #333333;
+  --videographer-red: #E53935;
+  --videographer-neon: #00E5FF;
+  --videographer-text-color: #ffffff;
+  --videographer-text-secondary: #cccccc;
+}
+
+.videographer-template {
+  font-family: 'Quicksand', 'Poppins', sans-serif;
+  background-color: var(--videographer-bg-color);
+  color: var(--videographer-text-color);
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.videographer-template::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, var(--videographer-red), var(--videographer-neon));
+}
+
+/* Header Styles */
+.videographer-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.videographer-photo-section {
+  margin-right: 30px;
+}
+
+.videographer-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--videographer-neon);
+  box-shadow: 0 0 15px rgba(0, 229, 255, 0.5);
+}
+
+.videographer-photo-placeholder {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: var(--videographer-light-gray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  border: 3px solid var(--videographer-neon);
+  box-shadow: 0 0 15px rgba(0, 229, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.videographer-photo-placeholder:hover {
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.6);
+}
+
+.videographer-photo-placeholder i {
+  font-size: 40px;
+  color: var(--videographer-neon);
+  margin-bottom: 5px;
+}
+
+.videographer-photo-placeholder span {
+  font-size: 12px;
+  color: var(--videographer-text-color);
+  text-align: center;
+  padding: 0 5px;
+}
+
+.videographer-drag-text {
+  font-size: 10px;
+  color: var(--videographer-text-secondary);
+  margin-top: 5px;
+}
+
+.videographer-photo-input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.videographer-header-content {
+  flex-grow: 1;
+}
+
+.videographer-name {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 0 5px 0;
+  background: linear-gradient(90deg, var(--videographer-red), var(--videographer-neon));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.videographer-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 15px 0;
+  color: var(--videographer-text-secondary);
+}
+
+.videographer-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.videographer-contact-item {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: var(--videographer-text-secondary);
+}
+
+.videographer-contact-item i {
+  color: var(--videographer-neon);
+  margin-right: 8px;
+}
+
+/* Thumbnails Styles */
+.videographer-thumbnails {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.videographer-thumbnail {
+  position: relative;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.videographer-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.videographer-thumbnail:hover img {
+  transform: scale(1.05);
+}
+
+.videographer-thumbnail-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 5px 10px;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.videographer-thumbnail:hover .videographer-thumbnail-overlay {
+  opacity: 1;
+}
+
+/* Main Content Styles */
+.videographer-main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.videographer-section {
+  background-color: var(--videographer-dark-gray);
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.videographer-section-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--videographer-neon);
+  margin: 0 0 20px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--videographer-light-gray);
+}
+
+.videographer-summary {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* Experience Styles */
+.videographer-experience-item {
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--videographer-light-gray);
+}
+
+.videographer-experience-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.videographer-experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.videographer-experience-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--videographer-text-color);
+  margin: 0;
+}
+
+.videographer-experience-date {
+  font-size: 14px;
+  color: var(--videographer-red);
+}
+
+.videographer-experience-company {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--videographer-neon);
+  margin-bottom: 10px;
+}
+
+.videographer-experience-description {
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--videographer-text-secondary);
+  margin-bottom: 10px;
+}
+
+.videographer-experience-projects {
+  font-size: 14px;
+  color: var(--videographer-text-secondary);
+}
+
+.videographer-projects-label {
+  font-weight: 600;
+  margin-right: 5px;
+  color: var(--videographer-text-color);
+}
+
+/* Education Styles */
+.videographer-education-item {
+  margin-bottom: 15px;
+}
+
+.videographer-education-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.videographer-education-degree {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.videographer-education-date {
+  font-size: 14px;
+  color: var(--videographer-red);
+}
+
+.videographer-education-school {
+  font-size: 15px;
+  color: var(--videographer-text-secondary);
+}
+
+/* Skills Container */
+.videographer-skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Skills Styles */
+.videographer-skills-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.videographer-skill-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.videographer-skill-name {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.videographer-skill-bar {
+  height: 6px;
+  background-color: var(--videographer-light-gray);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.videographer-skill-progress {
+  height: 100%;
+  background-color: var(--videographer-red);
+  border-radius: 3px;
+}
+
+/* Software Skills Styles */
+.videographer-software-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.videographer-software-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.videographer-software-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--videographer-light-gray);
+  border-radius: 50%;
+}
+
+.videographer-software-icon i {
+  font-size: 20px;
+  color: var(--videographer-neon);
+}
+
+.videographer-software-info {
+  flex-grow: 1;
+}
+
+.videographer-software-name {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.videographer-software-bar {
+  height: 6px;
+  background-color: var(--videographer-light-gray);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.videographer-software-progress {
+  height: 100%;
+  background-color: var(--videographer-neon);
+  border-radius: 3px;
+}
+
+/* Placeholder Styles */
+.videographer-placeholder {
+  color: #666;
+  font-style: italic;
+  font-size: 14px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .videographer-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .videographer-photo-section {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  
+  .videographer-contact {
+    justify-content: center;
+  }
+  
+  .videographer-skills-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .videographer-experience-header,
+  .videographer-education-header {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .videographer-template {
+    background-color: white;
+    color: black;
+    padding: 20px;
+  }
+  
+  .videographer-template::before {
+    display: none;
+  }
+  
+  .videographer-name {
+    background: none;
+    -webkit-text-fill-color: black;
+    color: black;
+  }
+  
+  .videographer-title,
+  .videographer-contact-item,
+  .videographer-experience-description,
+  .videographer-education-school {
+    color: #333;
+  }
+  
+  .videographer-section {
+    background-color: white;
+    box-shadow: none;
+    border: 1px solid #eee;
+  }
+  
+  .videographer-section-title,
+  .videographer-contact-item i,
+  .videographer-software-icon i {
+    color: #333;
+  }
+  
+  .videographer-experience-date,
+  .videographer-education-date {
+    color: #666;
+  }
+  
+  .videographer-experience-company {
+    color: #333;
+  }
+  
+  .videographer-skill-progress,
+  .videographer-software-progress {
+    background-color: #666;
+  }
+} 

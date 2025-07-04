@@ -1,0 +1,291 @@
+.medical-template {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+  background-color: white;
+  font-family: 'Lato', 'Manrope', sans-serif;
+  color: #333;
+  position: relative;
+}
+
+.medical-sidebar {
+  width: 30%;
+  background-color: #BBDEFB;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.medical-photo-container {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 15px;
+  position: relative;
+  background-color: #fff;
+  border: 2px solid #4CAF50;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.medical-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.medical-photo-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #BBDEFB;
+  background-color: #e1f5fe;
+  font-size: 60px;
+  position: relative;
+}
+
+.medical-photo-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.medical-sidebar-name {
+  color: #1565C0;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 10px 0 5px 0;
+}
+
+.medical-sidebar-title {
+  color: #4CAF50;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.medical-sidebar-section {
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.medical-sidebar-heading {
+  color: #1565C0;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #90CAF9;
+}
+
+.medical-contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 0.8rem;
+}
+
+.medical-contact-item i {
+  margin-right: 8px;
+  color: #4CAF50;
+  width: 16px;
+}
+
+.medical-language-item {
+  margin-bottom: 12px;
+}
+
+.medical-language-name {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.8rem;
+  text-align: left;
+}
+
+.medical-language-level-bar {
+  height: 6px;
+  background-color: #e1f5fe;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.medical-language-level-fill {
+  height: 100%;
+  background-color: #4CAF50;
+  border-radius: 3px;
+}
+
+.medical-quick-facts {
+  width: 100%;
+  text-align: left;
+}
+
+.medical-fact-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 10px;
+  margin-bottom: 8px;
+  background-color: #e1f5fe;
+  border-radius: 5px;
+  font-size: 0.75rem;
+  color: #999;
+}
+
+.medical-fact-item.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.medical-fact-item i {
+  margin-right: 8px;
+  font-size: 0.9rem;
+}
+
+.medical-content {
+  flex: 1;
+  padding: 25px;
+  overflow: auto;
+}
+
+.medical-certifications {
+  margin-bottom: 30px;
+}
+
+.medical-content-heading {
+  color: #4CAF50;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #BBDEFB;
+}
+
+.medical-cert-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.medical-cert-item {
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-left: 3px solid #4CAF50;
+  border-radius: 3px;
+  width: calc(50% - 5px);
+}
+
+.medical-cert-name {
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 3px;
+}
+
+.medical-cert-issuer {
+  font-size: 0.8rem;
+  color: #666;
+  margin-bottom: 3px;
+}
+
+.medical-cert-date {
+  font-size: 0.75rem;
+  color: #999;
+}
+
+.medical-section {
+  margin-bottom: 30px;
+}
+
+.medical-exp-item, .medical-edu-item {
+  margin-bottom: 20px;
+}
+
+.medical-exp-header, .medical-edu-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.medical-exp-title, .medical-edu-degree {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #1565C0;
+}
+
+.medical-exp-date, .medical-edu-date {
+  font-size: 0.8rem;
+  color: #999;
+}
+
+.medical-exp-company, .medical-edu-school {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.medical-exp-details {
+  padding-left: 18px;
+  margin: 8px 0 0 0;
+}
+
+.medical-exp-details li {
+  margin-bottom: 5px;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .medical-template {
+    flex-direction: column;
+  }
+  
+  .medical-sidebar {
+    width: 100%;
+    padding: 15px;
+  }
+  
+  .medical-photo-container {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .medical-content {
+    padding: 15px;
+  }
+  
+  .medical-cert-item {
+    width: 100%;
+  }
+  
+  .medical-exp-header, .medical-edu-header {
+    flex-direction: column;
+  }
+}
+
+/* Print styles */
+@media print {
+  .medical-template {
+    box-shadow: none;
+  }
+  
+  .medical-photo-placeholder {
+    border: 1px solid #ccc;
+  }
+  
+  .medical-fact-item.active {
+    background-color: #f5f5f5;
+    color: #4CAF50;
+    border: 1px solid #4CAF50;
+  }
+} 

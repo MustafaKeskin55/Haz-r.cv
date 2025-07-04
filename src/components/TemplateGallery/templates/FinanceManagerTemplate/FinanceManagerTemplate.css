@@ -1,0 +1,208 @@
+/* Finans Müdürü Şablonu CSS */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+.finance-manager-template {
+  font-family: 'Lato', 'Roboto', sans-serif;
+  background-color: #fff;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+.finance-header {
+  border-bottom: 2px solid #0B3D91;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+}
+
+.finance-name {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0B3D91;
+  margin: 0 0 5px 0;
+  letter-spacing: 0.5px;
+}
+
+.finance-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #555;
+  margin: 0 0 15px 0;
+}
+
+.finance-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.finance-contact-item {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.finance-contact-item i {
+  color: #0B3D91;
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+/* Main Content Styles */
+.finance-main {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.finance-section {
+  margin-bottom: 10px;
+}
+
+.finance-section-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0B3D91;
+  margin: 0 0 15px 0;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+.finance-summary {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+/* Experience Styles */
+.finance-experience-item {
+  margin-bottom: 20px;
+}
+
+.finance-experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 5px;
+}
+
+.finance-experience-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.finance-experience-date {
+  font-size: 14px;
+  color: #666;
+}
+
+.finance-experience-company {
+  font-size: 15px;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+.finance-experience-details {
+  margin: 8px 0 0 0;
+  padding-left: 20px;
+}
+
+.finance-experience-details li {
+  font-size: 14px;
+  margin-bottom: 5px;
+  line-height: 1.4;
+}
+
+/* Education Styles */
+.finance-education-item {
+  margin-bottom: 15px;
+}
+
+.finance-education-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.finance-education-degree {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.finance-education-date {
+  font-size: 14px;
+  color: #666;
+}
+
+.finance-education-school {
+  font-size: 14px;
+  color: #444;
+}
+
+/* Certifications Styles */
+.finance-certifications-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.finance-certification-item {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.finance-certification-item::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #0B3D91;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Skills Styles */
+.finance-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.finance-skill-item {
+  background-color: #f5f7fa;
+  border-left: 3px solid #0B3D91;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 3px;
+}
+
+/* Placeholder Styles */
+.finance-placeholder {
+  color: #999;
+  font-style: italic;
+  font-size: 14px;
+}
+
+/* Print Styles */
+@media print {
+  .finance-manager-template {
+    box-shadow: none;
+    padding: 0;
+  }
+  
+  .finance-header {
+    border-color: #333;
+  }
+  
+  .finance-section-title {
+    color: #000;
+  }
+} 

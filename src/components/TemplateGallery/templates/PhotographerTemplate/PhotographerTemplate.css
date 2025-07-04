@@ -1,0 +1,294 @@
+.photographer-template {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  background-color: #000000;
+  font-family: 'Poppins', 'Quicksand', sans-serif;
+  color: #F5F5F5;
+}
+
+.photographer-sidebar {
+  width: 300px;
+  background-color: #121212;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photographer-photo-container {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+  position: relative;
+  border: 3px solid #FFD600;
+}
+
+.photographer-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photographer-photo-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #222222;
+  font-size: 50px;
+  color: #333;
+  position: relative;
+  cursor: pointer;
+}
+
+.photographer-photo-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.photographer-contact {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.photographer-contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 0.8rem;
+}
+
+.photographer-contact-item i {
+  margin-right: 10px;
+  color: #FFD600;
+  width: 16px;
+}
+
+.photographer-social {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.photographer-social-item {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.photographer-social-item i {
+  margin-right: 10px;
+  color: #FFD600;
+  font-size: 1.1rem;
+}
+
+.photographer-social-link {
+  color: #F5F5F5;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.photographer-social-link:hover {
+  color: #FFD600;
+}
+
+.photographer-sidebar-heading {
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #FFD600;
+  margin: 0 0 15px 0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #333;
+}
+
+.photographer-gear-section {
+  width: 100%;
+}
+
+.photographer-gear-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.photographer-gear-item {
+  padding: 4px 10px;
+  background-color: #1A1A1A;
+  border-radius: 3px;
+  font-size: 0.75rem;
+  color: #CCC;
+}
+
+.photographer-content {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+  background-color: #000000;
+}
+
+.photographer-header {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.photographer-name {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin: 0 0 5px 0;
+  color: #F5F5F5;
+  letter-spacing: 1px;
+}
+
+.photographer-title {
+  font-size: 1rem;
+  color: #FFD600;
+  font-weight: 400;
+}
+
+.photographer-section {
+  margin-bottom: 35px;
+}
+
+.photographer-section-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #F5F5F5;
+  margin-bottom: 20px;
+  display: inline-block;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #FFD600;
+}
+
+.photographer-bio {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #CCC;
+}
+
+.photographer-portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.photographer-portfolio-item {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+  background-color: #1A1A1A;
+}
+
+.photographer-portfolio-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.photographer-portfolio-item:hover img {
+  transform: scale(1.05);
+}
+
+.photographer-portfolio-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #333;
+}
+
+.photographer-portfolio-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #FFF;
+  font-size: 0.8rem;
+}
+
+.photographer-exp-item, .photographer-edu-item {
+  margin-bottom: 20px;
+  padding-left: 15px;
+  border-left: 2px solid #FFD600;
+}
+
+.photographer-exp-header, .photographer-edu-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.photographer-exp-title, .photographer-edu-degree {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #F5F5F5;
+}
+
+.photographer-exp-date, .photographer-edu-date {
+  font-size: 0.8rem;
+  color: #999;
+}
+
+.photographer-exp-company, .photographer-edu-school {
+  font-size: 0.85rem;
+  color: #FFD600;
+  margin-bottom: 8px;
+}
+
+.photographer-exp-desc {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: #BBB;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .photographer-template {
+    flex-direction: column;
+  }
+  
+  .photographer-sidebar {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .photographer-photo-container {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .photographer-content {
+    padding: 20px;
+  }
+  
+  .photographer-portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .photographer-name {
+    font-size: 1.8rem;
+  }
+  
+  .photographer-exp-header, .photographer-edu-header {
+    flex-direction: column;
+  }
+} 

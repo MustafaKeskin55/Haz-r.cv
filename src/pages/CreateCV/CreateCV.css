@@ -1,0 +1,659 @@
+/* CV Creator Styles - Prefix ile çakışmaları önleme */
+/* Şablon Seçim Ekranı */
+.cv-creator .template-selection-screen {
+  width: 100%;
+  min-height: calc(100vh - 70px);
+  background-color: #f5f5f5;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cv-creator .template-selection-header {
+  text-align: center;
+  margin-bottom: 40px;
+  max-width: 800px;
+}
+
+.cv-creator .template-selection-header h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.cv-creator .template-selection-header p {
+  font-size: 18px;
+  color: #666;
+}
+
+.cv-creator .template-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.cv-creator .template-card {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.cv-creator .template-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.cv-creator .template-preview {
+  padding: 20px;
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  border-bottom: 1px solid #eee;
+}
+
+.cv-creator .template-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.cv-creator .template-card:hover .template-image {
+  transform: scale(1.05);
+}
+
+.cv-creator .template-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.cv-creator .template-info h3 {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.cv-creator .template-info p {
+  color: #666;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.cv-creator .select-template-btn {
+  background-color: #4a6fdc;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.cv-creator .select-template-btn:hover {
+  background-color: #3b5fc4;
+}
+
+/* CV Oluşturma Ekranı */
+.cv-creator .create-cv-container {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 70px); /* Subtract header height */
+  background-color: #f5f5f5;
+  overflow: hidden;
+}
+
+/* Editor Header */
+.cv-creator .editor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.cv-creator .editor-header h2 {
+  margin: 0;
+  font-size: 22px;
+  color: #333;
+}
+
+.cv-creator .template-badge {
+  display: flex;
+  align-items: center;
+  background-color: #f0f4ff;
+  padding: 8px 15px;
+  border-radius: 30px;
+  font-size: 14px;
+}
+
+.cv-creator .template-badge span {
+  color: #666;
+  margin-right: 5px;
+}
+
+.cv-creator .change-template-btn {
+  background: none;
+  border: none;
+  color: #4a6fdc;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 0;
+  text-decoration: underline;
+}
+
+.cv-creator .change-template-btn:hover {
+  color: #3b5fc4;
+}
+
+/* Left side - Form */
+.cv-creator .cv-editor {
+  width: 50%;
+  height: 100%;
+  overflow-y: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Template Selector */
+.cv-creator .template-selector {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.cv-creator .template-selector h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 18px;
+}
+
+.cv-creator .template-options {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.cv-creator .template-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.cv-creator .template-option:hover {
+  background-color: #f0f0f0;
+}
+
+.cv-creator .template-option.selected {
+  background-color: #e9f0ff;
+  border: 2px solid #4a6fdc;
+}
+
+.cv-creator .template-thumbnail {
+  width: 80px;
+  height: 110px;
+  border: 1px solid #ddd;
+  margin-bottom: 8px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Minimal template design */
+.cv-creator .minimal-thumb {
+  background-color: #fff;
+}
+
+.cv-creator .minimal-thumb::before {
+  content: "";
+  height: 20px;
+  background-color: #f8f9fa;
+  border-bottom: 2px solid #e9ecef;
+  margin-bottom: 5px;
+}
+
+.cv-creator .minimal-thumb::after {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 40px;
+  background-color: #4a6fdc;
+  margin: 5px 0 0 5px;
+}
+
+/* Technical template design */
+.cv-creator .technical-thumb {
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: row;
+}
+
+.cv-creator .technical-thumb::before {
+  content: "";
+  width: 25px;
+  background-color: #e9ecef;
+  border-right: 1px solid #dee2e6;
+}
+
+.cv-creator .technical-thumb::after {
+  content: "";
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+/* Creative template design */
+.cv-creator .creative-thumb {
+  background-color: #fff;
+  position: relative;
+}
+
+.cv-creator .creative-thumb::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 25px;
+  background-color: #6c5ce7;
+}
+
+.cv-creator .creative-thumb::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  width: 60%;
+  height: 10px;
+  background-color: #333;
+}
+
+/* Executive template design */
+.cv-creator .executive-thumb {
+  background-color: #fff;
+  position: relative;
+}
+
+.cv-creator .executive-thumb::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 15px;
+  background-color: #2c3e50;
+}
+
+.cv-creator .executive-thumb::after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 10px;
+  width: 40%;
+  height: 40px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+/* Form Container */
+.cv-creator .cv-form-container {
+  flex: 1;
+}
+
+/* Tab Navigation */
+.cv-creator .tab-navigation {
+  display: flex;
+  gap: 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.cv-creator .tab-navigation button {
+  padding: 12px 20px;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #555;
+}
+
+.cv-creator .tab-navigation button:hover {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.cv-creator .tab-navigation button.active {
+  border-bottom: 3px solid #4a6fdc;
+  color: #4a6fdc;
+  font-weight: 600;
+}
+
+/* Form Content */
+.cv-creator .form-content {
+  padding: 10px 0;
+}
+
+.cv-creator .form-section {
+  margin-bottom: 30px;
+}
+
+.cv-creator .form-group {
+  margin-bottom: 15px;
+}
+
+.cv-creator .form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #444;
+}
+
+.cv-creator .form-group input, 
+.cv-creator .form-group textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.cv-creator .form-group textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Experience and Education Items */
+.cv-creator .experience-item, 
+.cv-creator .education-item {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.cv-creator .experience-item h3, 
+.cv-creator .education-item h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.cv-creator .remove-button {
+  background-color: #ff5252;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+.cv-creator .remove-button.small {
+  padding: 3px 8px;
+  font-size: 12px;
+  position: relative;
+  top: 0;
+  right: 0;
+}
+
+.cv-creator .remove-button:hover {
+  background-color: #ff3838;
+}
+
+/* Detail Items */
+.cv-creator .details-group {
+  margin-top: 20px;
+}
+
+.cv-creator .detail-item {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.cv-creator .remove-detail-button {
+  background-color: #e0e0e0;
+  color: #555;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.cv-creator .add-detail-button {
+  background-color: #f0f0f0;
+  color: #555;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.cv-creator .add-item-button {
+  background-color: #4a6fdc;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.cv-creator .add-item-button:hover {
+  background-color: #3b5fc4;
+}
+
+/* Skills */
+.cv-creator .skill-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  padding: 10px 15px;
+  border-radius: 6px;
+}
+
+.cv-creator .skill-level {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cv-creator .skill-level input[type="range"] {
+  flex: 1;
+}
+
+/* Language Items */
+.cv-creator .language-item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  padding: 10px 15px;
+  border-radius: 6px;
+  align-items: center;
+}
+
+.cv-creator .language-item .form-group {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+/* Right side - Preview */
+.cv-creator .cv-preview {
+  width: 50%;
+  height: 100%;
+  overflow-y: auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+}
+
+.cv-creator .cv-preview h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.cv-creator .preview-container {
+  flex: 1;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.cv-creator .preview-content {
+  width: 100%;
+  height: auto;
+  transform: scale(0.95);
+  transform-origin: top center;
+}
+
+/* Şablon bileşenlerinin CV önizleme alanında düzgün görünmesi için stil ayarları */
+.cv-creator .preview-content .minimal-template,
+.cv-creator .preview-content .technical-template,
+.cv-creator .preview-content .creative-template,
+.cv-creator .preview-content .executive-template {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+.cv-creator .cv-preview-image {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Preview Actions */
+.cv-creator .cv-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  padding: 20px 0;
+}
+
+.cv-creator .save-button,
+.cv-creator .download-button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.cv-creator .save-button {
+  background-color: #4a6fdc;
+  color: white;
+}
+
+.cv-creator .save-button:hover {
+  background-color: #3b5fc4;
+}
+
+.cv-creator .download-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.cv-creator .download-button:hover {
+  background-color: #218838;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+  .cv-creator .create-cv-container {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .cv-creator .cv-editor, 
+  .cv-creator .cv-preview {
+    width: 100%;
+    height: auto;
+  }
+  
+  .cv-creator .cv-preview {
+    margin-top: 20px;
+  }
+  
+  .cv-creator .preview-container {
+    height: auto;
+    min-height: 500px;
+  }
+  
+  .cv-creator .template-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+  
+  .cv-creator .template-preview {
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cv-creator .template-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .cv-creator .template-selection-header h1 {
+    font-size: 28px;
+  }
+  
+  .cv-creator .template-selection-header p {
+    font-size: 16px;
+  }
+} 

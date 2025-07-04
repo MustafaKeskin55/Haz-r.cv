@@ -1,0 +1,369 @@
+/* UI/UX Designer Template CSS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Figtree:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --uiux-pastel-blue: #a6d8f5;
+  --uiux-pastel-pink: #f8c8dc;
+  --uiux-dark-blue: #2c3e50;
+  --uiux-light-gray: #f5f7fa;
+  --uiux-text-color: #333;
+  --uiux-accent-color: #5b86e5;
+}
+
+.uiux-template {
+  font-family: 'Montserrat', 'Figtree', sans-serif;
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: var(--uiux-text-color);
+  background-color: #fff;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Sidebar Styles */
+.uiux-sidebar {
+  width: 30%;
+  background-color: var(--uiux-pastel-blue);
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.uiux-photo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.uiux-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.uiux-photo-placeholder {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  border: 4px solid white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.uiux-photo-placeholder i {
+  font-size: 50px;
+  color: var(--uiux-pastel-pink);
+  margin-bottom: 10px;
+}
+
+.uiux-photo-input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.uiux-upload-text {
+  font-size: 11px;
+  color: var(--uiux-dark-blue);
+  text-align: center;
+  padding: 0 10px;
+}
+
+.uiux-sidebar-section {
+  margin-bottom: 25px;
+}
+
+.uiux-sidebar-title {
+  font-size: 16px;
+  color: var(--uiux-dark-blue);
+  font-weight: 600;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid white;
+}
+
+.uiux-contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.uiux-contact-item i {
+  width: 20px;
+  margin-right: 10px;
+  color: var(--uiux-dark-blue);
+}
+
+.uiux-skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.uiux-skill-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.uiux-skill-item i {
+  font-size: 18px;
+  color: var(--uiux-dark-blue);
+  width: 20px;
+  text-align: center;
+}
+
+.uiux-skill-info {
+  flex-grow: 1;
+}
+
+.uiux-skill-name {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.uiux-skill-bar {
+  height: 6px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.uiux-skill-progress {
+  height: 100%;
+  background-color: var(--uiux-pastel-pink);
+  border-radius: 3px;
+}
+
+/* Main Content Styles */
+.uiux-main {
+  width: 70%;
+  padding: 40px 30px;
+  background-color: white;
+}
+
+.uiux-header {
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid var(--uiux-pastel-pink);
+}
+
+.uiux-name {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--uiux-dark-blue);
+  margin: 0 0 5px 0;
+}
+
+.uiux-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--uiux-accent-color);
+  margin: 0;
+}
+
+.uiux-section {
+  margin-bottom: 30px;
+}
+
+.uiux-section-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--uiux-dark-blue);
+  margin: 0 0 15px 0;
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--uiux-pastel-blue);
+}
+
+.uiux-summary {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Experience Styles */
+.uiux-experience-item {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #e0e0e0;
+}
+
+.uiux-experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 5px;
+}
+
+.uiux-experience-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--uiux-dark-blue);
+  margin: 0;
+}
+
+.uiux-experience-date {
+  font-size: 14px;
+  color: #666;
+}
+
+.uiux-experience-company {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--uiux-accent-color);
+  margin-bottom: 8px;
+}
+
+.uiux-experience-description {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Projects Styles */
+.uiux-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.uiux-project-item {
+  background-color: var(--uiux-light-gray);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.uiux-project-item:hover {
+  transform: translateY(-3px);
+}
+
+.uiux-project-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--uiux-dark-blue);
+  margin: 0;
+  padding: 12px;
+  background-color: var(--uiux-pastel-blue);
+}
+
+.uiux-project-image {
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+}
+
+.uiux-project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.uiux-project-description {
+  padding: 12px;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.uiux-project-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 0 12px 12px;
+}
+
+.uiux-project-tool {
+  font-size: 11px;
+  background-color: var(--uiux-pastel-pink);
+  color: var(--uiux-dark-blue);
+  padding: 3px 8px;
+  border-radius: 12px;
+}
+
+/* Education Styles */
+.uiux-education-item {
+  margin-bottom: 15px;
+}
+
+.uiux-education-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.uiux-education-degree {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--uiux-dark-blue);
+  margin: 0;
+}
+
+.uiux-education-date {
+  font-size: 14px;
+  color: #666;
+}
+
+.uiux-education-school {
+  font-size: 14px;
+  color: var(--uiux-accent-color);
+}
+
+/* Placeholder Styles */
+.uiux-placeholder {
+  color: #999;
+  font-style: italic;
+  font-size: 14px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .uiux-template {
+    flex-direction: column;
+  }
+  
+  .uiux-sidebar,
+  .uiux-main {
+    width: 100%;
+  }
+  
+  .uiux-projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .uiux-template {
+    box-shadow: none;
+  }
+  
+  .uiux-sidebar {
+    background-color: #f0f8ff;
+  }
+  
+  .uiux-project-title {
+    background-color: #f0f8ff;
+  }
+  
+  .uiux-project-tool {
+    background-color: #ffebf3;
+  }
+} 

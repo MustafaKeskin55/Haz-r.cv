@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary: #FF6F61;
+  --primary-light: rgba(255, 111, 97, 0.1);
+  --primary-dark: #E84C3D;
+  --text-dark: #333;
+  --text-light: #777;
+  --white: #fff;
+}
+
+.creative-split-template {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.4;
+  color: var(--text-dark);
+  background-color: var(--white);
+  min-height: 100%;
+}
+
+.creative-split-container {
+  display: flex;
+  max-width: 1100px;
+  margin: 0 auto;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  min-height: 800px;
+}
+
+/* Left sidebar */
+.creative-split-sidebar {
+  width: 35%;
+  padding: 2rem;
+  background-color: var(--primary);
+  color: var(--white);
+  position: relative;
+}
+
+.creative-split-profile {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.creative-split-name {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+.creative-split-title {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0.5rem 0 1.2rem;
+  opacity: 0.9;
+}
+
+.creative-split-photo {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid rgba(255, 255, 255, 0.3);
+}
+
+.creative-split-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Sidebar sections */
+.creative-split-sidebar-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 1rem 0 0.75rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.creative-split-sidebar-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: var(--white);
+}
+
+/* Contact */
+.creative-split-contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.creative-split-contact-list li {
+  margin-bottom: 0.5rem;
+}
+
+.creative-split-contact-label {
+  display: block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  opacity: 0.8;
+  margin-bottom: 0.25rem;
+}
+
+.creative-split-contact-value {
+  font-size: 0.95rem;
+}
+
+/* Skills */
+.creative-split-skill-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.7rem;
+}
+
+.creative-split-skill-block {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+.creative-split-skill-block:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Main content area */
+.creative-split-main {
+  width: 65%;
+  padding: 2rem;
+  background-color: var(--white);
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Sections */
+.creative-split-section {
+  margin-bottom: 0;
+  opacity: 1;
+  flex-shrink: 0;
+}
+
+.creative-split-section:nth-child(1) { animation-delay: 0.1s; }
+.creative-split-section:nth-child(2) { animation-delay: 0.2s; }
+.creative-split-section:nth-child(3) { animation-delay: 0.3s; }
+.creative-split-section:nth-child(4) { animation-delay: 0.4s; }
+
+.creative-split-section-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin: 0 0 0.75rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #eee;
+}
+
+/* Experience */
+.creative-split-exp-item {
+  margin-bottom: 1rem;
+}
+
+.creative-split-exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.3rem;
+}
+
+.creative-split-exp-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.creative-split-exp-date {
+  font-size: 0.85rem;
+  color: var(--primary);
+}
+
+.creative-split-exp-company {
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+}
+
+.creative-split-details {
+  padding-left: 1rem;
+  margin: 0.4rem 0 0;
+}
+
+.creative-split-details li {
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+/* Education */
+.creative-split-edu-item {
+  margin-bottom: 1rem;
+}
+
+.creative-split-edu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.3rem;
+}
+
+.creative-split-edu-degree {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.creative-split-edu-date {
+  font-size: 0.85rem;
+  color: var(--primary);
+}
+
+.creative-split-edu-school {
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+/* Achievements */
+.creative-split-achievements-list {
+  padding-left: 1rem;
+  margin: 0;
+}
+
+.creative-split-achievements-list li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .creative-split-container {
+    flex-direction: column;
+  }
+  
+  .creative-split-sidebar,
+  .creative-split-main {
+    width: 100%;
+  }
+  
+  .creative-split-sidebar {
+    padding-bottom: 3rem;
+  }
+}
+
+/* Print styles */
+@media print {
+  .creative-split-container {
+    box-shadow: none;
+  }
+  
+  .creative-split-section {
+    opacity: 1;
+    animation: none;
+  }
+}
+
+.template-preview-modal .creative-split-template {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.template-preview-modal .creative-split-container {
+  max-width: 100%;
+  min-height: 500px;
+}
+
+.template-preview-modal .creative-split-sidebar,
+.template-preview-modal .creative-split-main {
+  padding: 1rem;
+}
+
+.template-preview-modal .creative-split-name {
+  font-size: 1.5rem;
+}
+
+.template-preview-modal .creative-split-title {
+  font-size: 0.9rem;
+  margin: 0.3rem 0 1rem;
+}
+
+.template-preview-modal .creative-split-sidebar-title {
+  font-size: 1rem;
+  margin: 0.75rem 0 0.5rem;
+}
+
+.template-preview-modal .creative-split-section-title {
+  font-size: 1.1rem;
+  margin: 0 0 0.5rem;
+  padding-bottom: 0.3rem;
+}
+
+.template-preview-modal .creative-split-profile {
+  margin-bottom: 1rem;
+}
+
+.template-preview-modal .creative-split-exp-item,
+.template-preview-modal .creative-split-edu-item {
+  margin-bottom: 0.75rem;
+}
+
+.template-preview-modal .creative-split-exp-title,
+.template-preview-modal .creative-split-edu-degree {
+  font-size: 0.95rem;
+}
+
+.template-preview-modal .creative-split-exp-company,
+.template-preview-modal .creative-split-edu-school {
+  font-size: 0.85rem;
+}
+
+.template-preview-modal .creative-split-details li,
+.template-preview-modal .creative-split-achievements-list li {
+  font-size: 0.85rem;
+  margin-bottom: 0.3rem;
+}
+
+/* Responsive section spacing */
+.creative-split-about,
+.creative-split-experience,
+.creative-split-education {
+  margin-bottom: 0.8rem;
+  flex-grow: 0;
+}
+
+.creative-split-achievements {
+  margin-bottom: 0;
+  flex-grow: 0;
+}
+
+/* Empty space to push sections apart */
+.creative-split-main::after {
+  content: '';
+  flex: 1 1 auto;
+  min-height: 0.5rem;
+}
+
+/* Space between sections when content is minimal */
+.creative-split-about:not(:empty) ~ .creative-split-experience:not(:empty),
+.creative-split-experience:not(:empty) ~ .creative-split-education:not(:empty),
+.creative-split-education:not(:empty) ~ .creative-split-achievements:not(:empty) {
+  margin-top: 0.5rem;
+}
+
+/* Adjust spacing based on content amount */
+.creative-split-main:has(.creative-split-experience:empty) .creative-split-about {
+  margin-bottom: 1.2rem;
+}
+
+.creative-split-main:has(.creative-split-education:empty) .creative-split-experience {
+  margin-bottom: 1.2rem;
+}
+
+/* Template preview modal adjustments */
+.template-preview-modal .creative-split-main {
+  justify-content: flex-start;
+}
+
+.template-preview-modal .creative-split-main::after {
+  display: none;
+}
+
+.template-preview-modal .creative-split-about,
+.template-preview-modal .creative-split-experience,
+.template-preview-modal .creative-split-education,
+.template-preview-modal .creative-split-achievements {
+  margin-bottom: 0.8rem;
+} 

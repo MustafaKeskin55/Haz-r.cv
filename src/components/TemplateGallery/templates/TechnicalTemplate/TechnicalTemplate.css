@@ -1,0 +1,296 @@
+.technical-template {
+  font-family: 'Roboto Mono', monospace;
+  color: #333;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  position: relative;
+  overflow: hidden;
+  font-size: 0.7rem;
+  height: 100%;
+  width: 100%;
+  padding: 25px;
+  line-height: 1.5;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.technical-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #4682b4;
+  flex-shrink: 0;
+}
+
+.technical-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+  color: #4682b4;
+  letter-spacing: -0.5px;
+}
+
+.technical-title {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #666;
+}
+
+.technical-contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 0.7rem;
+}
+
+.technical-contact-item, .technical-social-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.technical-contact-item i, .technical-social-item i {
+  margin-right: 8px;
+  color: #4682b4;
+  width: 15px;
+  text-align: center;
+}
+
+.technical-social-links {
+  margin-top: 5px;
+  border-top: 1px solid #eee;
+  padding-top: 5px;
+}
+
+.technical-body {
+  display: flex;
+  gap: 25px;
+  flex: 1;
+}
+
+.technical-main-section {
+  flex: 3;
+}
+
+.technical-sidebar {
+  flex: 1;
+  border-left: 1px solid #eee;
+  padding-left: 15px;
+}
+
+.technical-section-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #4682b4;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.technical-section-title::before {
+  content: '//';
+  color: #4682b4;
+  margin-right: 8px;
+  font-weight: 700;
+}
+
+.technical-summary {
+  margin-bottom: 20px;
+}
+
+.technical-summary p {
+  margin: 0;
+  font-size: 0.75rem;
+  color: #555;
+}
+
+.technical-job {
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 15px;
+}
+
+.technical-job::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 3px;
+  background-color: #eee;
+}
+
+.technical-job-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.technical-job-title-company {
+  display: flex;
+  flex-direction: column;
+}
+
+.technical-job-title {
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.technical-job-company {
+  font-size: 0.75rem;
+  color: #4682b4;
+}
+
+.technical-job-date {
+  font-size: 0.7rem;
+  color: #888;
+}
+
+.technical-job-details {
+  padding-left: 15px;
+  margin: 5px 0 0 0;
+  font-size: 0.7rem;
+}
+
+.technical-job-details li {
+  margin-bottom: 3px;
+  position: relative;
+}
+
+.technical-projects {
+  margin-bottom: 20px;
+}
+
+.technical-project {
+  background-color: #f7f9fc;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  border-left: 3px solid #4682b4;
+}
+
+.technical-project-name {
+  font-weight: 700;
+  font-size: 0.8rem;
+  margin-bottom: 3px;
+}
+
+.technical-project-tech {
+  font-size: 0.65rem;
+  color: #888;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.technical-edu-item {
+  margin-bottom: 12px;
+}
+
+.technical-edu-degree {
+  font-weight: 700;
+  font-size: 0.75rem;
+  margin-bottom: 3px;
+}
+
+.technical-edu-school {
+  font-size: 0.7rem;
+  color: #4682b4;
+}
+
+.technical-edu-date {
+  font-size: 0.65rem;
+  color: #888;
+}
+
+.technical-skills-grid {
+  display: grid;
+  gap: 8px;
+}
+
+.technical-skill-item {
+  margin-bottom: 5px;
+}
+
+.technical-skill-name {
+  font-size: 0.75rem;
+  margin-bottom: 3px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.technical-skill-name::after {
+  content: '{';
+  color: #4682b4;
+}
+
+.technical-skill-bar-container {
+  height: 8px;
+  background-color: #f1f1f1;
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+}
+
+.technical-skill-bar-container::after {
+  content: '}';
+  position: absolute;
+  right: -12px;
+  top: -5px;
+  color: #4682b4;
+}
+
+.technical-skill-bar {
+  height: 100%;
+  background-color: #4682b4;
+  border-radius: 2px;
+}
+
+/* Template preview modal adjustments */
+.template-preview-modal .technical-template {
+  max-width: 100%;
+  padding: 20px;
+  font-size: 0.85em;
+}
+
+.template-preview-modal .technical-header {
+  margin-bottom: 15px;
+  padding-bottom: 12px;
+}
+
+.template-preview-modal .technical-name {
+  font-size: 1.6rem;
+}
+
+.template-preview-modal .technical-title {
+  font-size: 0.9rem;
+}
+
+.template-preview-modal .technical-body {
+  gap: 20px;
+}
+
+.template-preview-modal .technical-section-title {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.template-preview-modal .technical-summary {
+  margin-bottom: 15px;
+}
+
+.template-preview-modal .technical-job {
+  margin-bottom: 12px;
+}
+
+.template-preview-modal .technical-projects {
+  margin-bottom: 15px;
+}
+
+.template-preview-modal .technical-project {
+  margin-bottom: 8px;
+}
+
+.template-preview-modal .technical-edu-item {
+  margin-bottom: 10px;
+}

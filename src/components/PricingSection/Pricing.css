@@ -1,0 +1,70 @@
+.section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-title h2 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #0B3D91;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title h2::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #0B3D91;
+  margin: 0.5rem auto 0;
+}
+
+.section-title p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #6c757d;
+}
+
+.custom-card {
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-check-input {
+  cursor: pointer;
+}
+
+.form-check-input:checked {
+  background-color: #0B3D91;
+  border-color: #0B3D91;
+}
+
+.badge.bg-danger {
+  background-color: #dc3545 !important;
+}
+
+.display-4 {
+  font-size: 2.5rem;
+}
+
+.card-header {
+  border-bottom: none;
+}
+
+.list-unstyled li {
+  position: relative;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+.text-success {
+  color: #10B981 !important;
+} 

@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+  --primary: #1A73E8;
+  --primary-light: rgba(26, 115, 232, 0.05);
+  --dark: #333;
+  --gray: #757575;
+  --light-gray: #f5f5f5;
+  --white: #ffffff;
+}
+
+.corporate-blue-template {
+  font-family: 'Roboto', sans-serif;
+  color: var(--dark);
+  background-color: var(--white);
+  line-height: 1.6;
+  min-height: 100%;
+}
+
+.corporate-blue-container {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  min-height: 100%;
+}
+
+/* Left Column */
+.corporate-blue-left-column {
+  width: 35%;
+  padding: 2rem;
+  background-color: var(--light-gray);
+}
+
+.corporate-blue-photo {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.corporate-blue-photo img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--primary);
+}
+
+.corporate-blue-section-title {
+  color: var(--primary);
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 1.2rem 0 0.8rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--primary);
+}
+
+/* Contact */
+.corporate-blue-contact-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.corporate-blue-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+}
+
+.corporate-blue-contact-item i {
+  color: var(--primary);
+  font-size: 1rem;
+}
+
+/* Skills */
+.corporate-blue-skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.corporate-blue-skill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.corporate-blue-skill i {
+  color: var(--primary);
+}
+
+.corporate-blue-skill span {
+  font-size: 0.9rem;
+  flex: 1;
+}
+
+.corporate-blue-skill-bar {
+  width: 100%;
+  height: 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 0.25rem;
+}
+
+.corporate-blue-skill-level {
+  height: 100%;
+  background-color: var(--primary);
+}
+
+/* Right Column */
+.corporate-blue-right-column {
+  width: 65%;
+  padding: 2rem;
+}
+
+.corporate-blue-header {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.corporate-blue-name {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin: 0;
+}
+
+.corporate-blue-title {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--primary);
+  margin: 0.5rem 0 0;
+}
+
+.corporate-blue-summary {
+  margin-bottom: 1.5rem;
+}
+
+.corporate-blue-summary p {
+  margin: 0;
+  color: var(--gray);
+}
+
+/* Experience */
+.corporate-blue-exp-item {
+  margin-bottom: 1.5rem;
+}
+
+.corporate-blue-exp-header {
+  margin-bottom: 0.75rem;
+}
+
+.corporate-blue-exp-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.corporate-blue-exp-company {
+  font-weight: 500;
+  color: var(--gray);
+}
+
+.corporate-blue-exp-date {
+  font-size: 0.85rem;
+  color: var(--primary);
+  margin-top: 0.25rem;
+}
+
+.corporate-blue-exp-details {
+  padding-left: 1.25rem;
+  margin: 0.5rem 0 0;
+}
+
+.corporate-blue-exp-details li {
+  margin-bottom: 0.5rem;
+  color: var(--gray);
+  font-size: 0.95rem;
+}
+
+/* Education */
+.corporate-blue-edu-item {
+  margin-bottom: 1.2rem;
+}
+
+.corporate-blue-edu-header {
+  margin-bottom: 0.5rem;
+}
+
+.corporate-blue-edu-degree {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.corporate-blue-edu-school {
+  font-weight: 500;
+  color: var(--gray);
+}
+
+.corporate-blue-edu-date {
+  font-size: 0.85rem;
+  color: var(--primary);
+  margin-top: 0.25rem;
+}
+
+/* Icons */
+.icon-envelope::before { content: "✉"; }
+.icon-phone::before { content: "📱"; }
+.icon-map-pin::before { content: "📍"; }
+.icon-github::before { content: ""; }
+.icon-linkedin::before { content: ""; }
+.icon-globe::before { content: "🌐"; }
+.icon-check::before { content: "✓"; }
+
+/* Template preview modal adjustments */
+.template-preview-modal .corporate-blue-template {
+  max-width: 100%;
+  font-size: 0.9em;
+}
+
+.template-preview-modal .corporate-blue-container {
+  box-shadow: none;
+}
+
+.template-preview-modal .corporate-blue-left-column,
+.template-preview-modal .corporate-blue-right-column {
+  padding: 1.5rem;
+}
+
+.template-preview-modal .corporate-blue-photo {
+  margin-bottom: 1.2rem;
+}
+
+.template-preview-modal .corporate-blue-photo img {
+  width: 120px;
+  height: 120px;
+}
+
+.template-preview-modal .corporate-blue-section-title {
+  font-size: 1.1rem;
+  margin: 1rem 0 0.7rem;
+  padding-bottom: 0.4rem;
+}
+
+.template-preview-modal .corporate-blue-header {
+  margin-bottom: 1.2rem;
+}
+
+.template-preview-modal .corporate-blue-name {
+  font-size: 1.8rem;
+}
+
+.template-preview-modal .corporate-blue-title {
+  font-size: 1.1rem;
+}
+
+.template-preview-modal .corporate-blue-summary {
+  margin-bottom: 1.2rem;
+}
+
+.template-preview-modal .corporate-blue-exp-item {
+  margin-bottom: 1.2rem;
+}
+
+.template-preview-modal .corporate-blue-exp-title {
+  font-size: 1rem;
+}
+
+.template-preview-modal .corporate-blue-edu-item {
+  margin-bottom: 1rem;
+}
+
+.template-preview-modal .corporate-blue-edu-degree {
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .corporate-blue-container {
+    flex-direction: column;
+  }
+  
+  .corporate-blue-left-column,
+  .corporate-blue-right-column {
+    width: 100%;
+  }
+}
+
+/* Print styles */
+@media print {
+  .corporate-blue-container {
+    box-shadow: none;
+  }
+  
+  .corporate-blue-left-column {
+    background-color: transparent;
+  }
+}

@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap');
+
+.tech-stack-template {
+  font-family: 'JetBrains Mono', monospace;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  color: #333;
+  background-color: #f8f9fa;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.tech-stack-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+}
+
+/* Header */
+.tech-stack-header {
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #333;
+  padding-bottom: 1rem;
+}
+
+.tech-stack-name {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+  color: #00C853;
+}
+
+.tech-stack-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 0.5rem 0 1rem;
+}
+
+.tech-stack-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+  font-size: 0.875rem;
+}
+
+.tech-stack-contact-item {
+  background: rgba(0, 200, 83, 0.1);
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  letter-spacing: -0.5px;
+}
+
+/* Sections */
+.tech-stack-section-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0077b6;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+
+section {
+  margin-bottom: 1rem;
+  flex-shrink: 0;
+}
+
+/* Empty space to push sections apart */
+.tech-stack-content::after {
+  content: '';
+  flex: 1 1 auto;
+  min-height: 0.5rem;
+}
+
+/* Template preview modal adjustments */
+.template-preview-modal .tech-stack-template {
+  max-width: 100%;
+  padding: 1.5rem;
+  font-size: 0.9em;
+}
+
+.template-preview-modal .tech-stack-content {
+  justify-content: flex-start;
+}
+
+.template-preview-modal .tech-stack-content::after {
+  display: none;
+}
+
+.template-preview-modal section {
+  margin-bottom: 0.8rem;
+}
+
+.template-preview-modal .tech-stack-name {
+  font-size: 1.8rem;
+}
+
+.template-preview-modal .tech-stack-title {
+  font-size: 1.1rem;
+  margin: 0.3rem 0 0.8rem;
+}
+
+.template-preview-modal .tech-stack-contact {
+  gap: 0.7rem;
+  margin-top: 0.7rem;
+}
+
+.template-preview-modal .tech-stack-section-title {
+  font-size: 1rem;
+  margin-bottom: 0.7rem;
+  padding-bottom: 0.3rem;
+}
+
+.template-preview-modal .tech-stack-project,
+.template-preview-modal .tech-stack-job,
+.template-preview-modal .tech-stack-edu {
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+
+.template-preview-modal .tech-stack-project-name,
+.template-preview-modal .tech-stack-job-title {
+  font-size: 1rem;
+}
+
+/* Skills */
+.tech-stack-skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.tech-stack-skill-tag {
+  background-color: #263238;
+  color: white;
+  padding: 0.25rem 0.6rem;
+  border-radius: 3px;
+  font-size: 0.875rem;
+}
+
+/* Projects */
+.tech-stack-project {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px dashed rgba(38, 50, 56, 0.15);
+}
+
+.tech-stack-project:last-child {
+  border-bottom: none;
+}
+
+.tech-stack-project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.tech-stack-project-name {
+  font-weight: 700;
+  margin: 0;
+  font-size: 1.125rem;
+}
+
+.tech-stack-project-link {
+  color: #00C853;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.tech-stack-project-link:hover {
+  text-decoration: underline;
+}
+
+.tech-stack-project-description {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.tech-stack-project-tech {
+  font-size: 0.85rem;
+  color: rgba(38, 50, 56, 0.7);
+  margin-top: 0.5rem;
+}
+
+/* Experience */
+.tech-stack-job {
+  margin-bottom: 1.5rem;
+}
+
+.tech-stack-job-header {
+  margin-bottom: 0.5rem;
+}
+
+.tech-stack-job-title {
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin: 0 0 0.25rem;
+}
+
+.tech-stack-job-company {
+  display: block;
+  font-weight: 500;
+}
+
+.tech-stack-job-date {
+  display: block;
+  font-size: 0.85rem;
+  color: rgba(38, 50, 56, 0.7);
+  margin-top: 0.25rem;
+}
+
+.tech-stack-job-details {
+  padding-left: 1.25rem;
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.tech-stack-job-details li {
+  margin-bottom: 0.5rem;
+}
+
+/* Education */
+.tech-stack-edu {
+  margin-bottom: 1rem;
+}
+
+.tech-stack-edu-degree {
+  font-weight: 700;
+  margin: 0 0 0.25rem;
+  font-size: 1.05rem;
+}
+
+.tech-stack-edu-school,
+.tech-stack-edu-date {
+  display: block;
+  font-size: 0.9rem;
+}
+
+.tech-stack-edu-date {
+  color: rgba(38, 50, 56, 0.7);
+  font-size: 0.85rem;
+}
+
+/* Responsive */
+@media print, (max-width: 768px) {
+  .tech-stack-template {
+    padding: 1rem;
+  }
+  
+  .tech-stack-contact {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+@media print {
+  .tech-stack-template {
+    max-width: 100%;
+  }
+} 
