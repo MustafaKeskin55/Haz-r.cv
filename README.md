@@ -1,6 +1,8 @@
 # HazırCV - Modern CV Oluşturma Platformu
 
-Bu repo, HazırCV platformunun frontend kısmını içerir. HazırCV, profesyonel özgeçmiş oluşturma sürecini kolaylaştıran modern ve kullanıcı dostu bir web platformudur.
+Bu repo, HazırCV platformunun frontend kısmını içerir. HazırCV, profesyonel özgeçmiş oluşturma sürecini kolaylaştıran modern ve kullanıcı dostu bir web platformudur.Geliştirme aşamasındadır
+
+canlı ortamda:https://haz-r-cv.vercel.app/
 
 ## Özellikler
 
